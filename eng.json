@@ -5,5 +5,27 @@
     "firstname":"Evgeniy Grushevskiy",
     "speciality":"web developer",
     "education":"education",
-    "works": "my works during educaton"
+    "works": "my works during educaton",
+    "educationItems" : [
+        {
+            "educationName": "BELARUSIAN STATE UNIVERSITY OF INFORMATICS AND RADIOELECTRONICS",
+            "educationYears": "SEP 2017 - JUN 2021",
+            "educationDescr": "Speciality: Information Technology and Management in technical systems. Qualification: Information technology engineer. Visual C++, SQL, Access, Oracle, AutoCad, Autodesk Inventor, Internet-technology." 
+        },
+        {
+            "educationName": "IT-ACADEMY. EDUCATION CENTER FOR PROGRAMMING AND HIGH TECK",
+            "educationYears": "SEP 2020 - DEC 2020",
+            "educationDescr": "Website development with HTML, CSS & JavaScript. Responsive web page layout, multimedia, cross-browser compatibility, сss pre-processors, bootstrap, basic JS." 
+        },
+        {
+            "educationName": "IT-ACADEMY. EDUCATION CENTER FOR PROGRAMMING AND HIGH TECK",
+            "educationYears": "DEC 2020 - MAR 2021",
+            "educationDescr": "Web application development with JavaScript. Basic JS, OOP, ES6, DOM API, DOM Events, Animations, Render tree, MVC, SPA, Fetch API." 
+        },
+        {
+            "educationName": "ROLLING SCOPE SCHOOL",
+            "educationYears": "SEP 2022 - NOV 2022",
+            "educationDescr": "RS School. Curse JS/Frontend - development. Stage#1. Git, GitHub, Adaptive layout, Core JS, Algorithmic tasks, DOM, DOM Events, Browser API, basic NodeJS, WebPack." 
+        }
+    ]
 }

@@ -8,17 +8,16 @@ const getResource = async (url) => {
     return await res.json();
 };
 
-
-
 class ChoiceLanguage {
-    constructor(profile, profileDescr, skills, firstname, speciality, education, works) {
+    constructor(profile, profileDescr, skills, firstname, speciality, education, works, educationItems) {
         this.profile = profile;
         this.profileDescr = profileDescr;
         this.skills = skills;
         this.firstname = firstname;
         this.speciality = speciality;
         this.education = education;
-        this.works = works;
+        this.works = works,
+            this.educationItems = educationItems;
     }
 
     translate() {
@@ -29,6 +28,7 @@ class ChoiceLanguage {
             speciality = document.querySelector('.right-content h3'),
             education = document.querySelector('.ed'),
             works = document.querySelector('.work');
+
         profile.innerHTML = this.profile;
         profileDescr.innerHTML = this.profileDescr;
         skills.innerHTML = this.skills;
@@ -36,6 +36,17 @@ class ChoiceLanguage {
         speciality.innerHTML = this.speciality;
         education.innerHTML = this.education;
         works.innerHTML = this.works;
+
+        const educationItems = document.querySelectorAll(".education__item"),
+            educationName = document.querySelectorAll(".education__name"),
+            educationYears = document.querySelectorAll(".education__years"),
+            educationDescr = document.querySelectorAll(".education__descr");
+
+        educationItems.forEach((item, i) => {
+            educationName[i].innerHTML = this.educationItems[i].educationName;
+            educationYears[i].innerHTML = this.educationItems[i].educationYears;
+            educationDescr[i].innerHTML = this.educationItems[i].educationDescr;
+        });
     }
 }
 
@@ -68,10 +79,11 @@ language.addEventListener("click", (e) => {
                     firstname,
                     speciality,
                     education,
-                    works
+                    works,
+                    educationItems
                 } = data;
 
-                new ChoiceLanguage(profile, profileDescr, skills, firstname, speciality, education, works).translate();
+                new ChoiceLanguage(profile, profileDescr, skills, firstname, speciality, education, works, educationItems).translate();
             });
     }
 });

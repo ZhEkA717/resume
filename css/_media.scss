@@ -1,11 +1,24 @@
-@media (max-width: 990px){
-    .resume__content{
-        flex-direction: column;
-    }
+@media (max-width:1450px){
     .programs,.clips{
         display: none;
     }
+}
+@media (max-width:1250px){
+    .resume{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
 
+@media (max-width: 990px){
+    .resume{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .resume__content{
+        padding-top: 45px;
+        flex-direction: column;
+    }
     .title_media {
         h2 {
             color: white;
@@ -60,10 +73,36 @@
         h1{
             font-size: 36px;
         }
+        .works{
+            margin-left: 100px;
+        }
+    }
+    .language{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-right: 10px;
+        color: lightgrey;
+        .ru{
+            margin-right: 10px;
+        }
+    
+        .eng{
+            margin-left: 10px;
+        }
+    
+        span:hover,.active{
+            cursor: pointer;
+            transition: .5s;
+            border-bottom: 1px solid white;
+            color: white;
+        }
     }
 }
 
-@media (max-width:440px){
+@media (max-width:460px){
     .right-content{
         h1{
             font-size: 28px;
@@ -103,38 +142,29 @@
     
         .education{
             width: 72%;
-            margin-left: 95px;
+            margin-left: 65px;
+            &__item{
+                &::before{
+                    left: -25px;
+                }
+            }
         }
         
         .works{
             width: 72%;
             margin-top: 25px;
-            margin-left: 123px;
+            margin-left: 60px;
             &__item{
                 margin-bottom: 20px;
                 list-style-type: none;
                 position: relative;
                 &::before{
                     content:"";
-                    position: absolute;
-                    left: -60px;
-                    top: 6px;
-                    width: 11px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background:rgb(100, 94, 94);
-                }
-    
-                a{
-                    text-decoration: none;
-                    color:rgb(100, 94, 94);
-                    font-size: 20px;
-                    font-weight: 500;
-                }
-                &:hover{
-                    opacity: 0.7;
+                    left: -25px;
                 }
             }
         }
     }
 }   
+
+
