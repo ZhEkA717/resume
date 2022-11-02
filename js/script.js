@@ -59,7 +59,7 @@ language.addEventListener("click", (e) => {
         }
 
         const lng = e.target.classList.contains("ru") ? "ru" : "eng";
-        getResource(`../${lng}.json`)
+        getResource(`https://zheka717.github.io/resume/${lng}.json`)
             .then(data => {
                 let {
                     profile,
