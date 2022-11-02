@@ -22,6 +22,14 @@
     .contacts {
         margin-top: 40px;
         margin-left: 80px;
+        a {
+            color: lightgrey;
+            text-decoration: none;
+
+            &:hover{
+                opacity: .7;
+            }
+        }
 
         &__item {
             display: flex;
@@ -45,14 +53,6 @@
                     font-size: 18px;
                     font-weight: 300;
                     color: lightgrey;
-                    a {
-                        color: lightgrey;
-                        text-decoration: none;
-
-                        &:hover{
-                            opacity: .7;
-                        }
-                    }
                 }
             }
         }
