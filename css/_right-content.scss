@@ -1,0 +1,104 @@
+.right-content{
+    background: rgb(245, 241, 241) url("../images/back.jpg");
+    background-repeat:no-repeat;
+    background-position: left top;
+    background-size: 60px;
+    width: 100%;
+    
+    h1{
+        font-size: 54px;
+        margin-top: 85px;
+        margin-left: 120px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: rgb(71, 67, 67);
+        font-weight: 700;
+    }
+
+    h3{
+        margin-top: 10px;
+        margin-left: 120px;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgb(100, 94, 94);
+    }
+
+    .education{
+        width: 72%;
+        margin-top: 25px;
+        margin-left: 123px;
+
+        &__item{
+            margin-bottom: 20px;
+            list-style-type: none;
+            position: relative;
+            &::before{
+                content:"";
+                position: absolute;
+                left: -60px;
+                top: 11px;
+                width: 11px;
+                height: 10px;
+                border-radius: 50%;
+                background:rgb(100, 94, 94);
+            }
+        }
+
+        &__name{
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color:rgb(71, 67, 67);
+            word-spacing: 3px;
+            letter-spacing: .5px;
+            margin-bottom: 7px;
+        }
+        &__years{
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color:rgb(100, 94, 94);
+            word-spacing: 5px;
+            margin-bottom: 7px;
+        }
+        &__descr{
+            font-size: 19px;
+            font-weight: 400;
+            color:rgb(119, 111, 111);
+            word-spacing: 5px;
+
+        }
+    }
+    
+    .works{
+        width: 72%;
+        margin-top: 25px;
+        margin-left: 123px;
+        &__item{
+            margin-bottom: 20px;
+            list-style-type: none;
+            position: relative;
+            &::before{
+                content:"";
+                position: absolute;
+                left: -60px;
+                top: 6px;
+                width: 11px;
+                height: 10px;
+                border-radius: 50%;
+                background:rgb(100, 94, 94);
+            }
+
+            a{
+                text-decoration: none;
+                color:rgb(100, 94, 94);
+                font-size: 20px;
+                font-weight: 500;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

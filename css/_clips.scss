@@ -1,0 +1,12 @@
+.clips{
+    position: absolute;
+    right: 0;
+    margin-right: -110px;
+
+    &__item{
+        width: 150px;
+        img{
+            width: 100%;
+        }
+    }
+}

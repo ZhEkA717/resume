@@ -1,0 +1,19 @@
+.programs{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    margin-right: -110px;
+
+    &__item{
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
+
+        a img:hover{
+            transform: scale(1.1);
+            transition: .5s;
+        }
+    }
+}

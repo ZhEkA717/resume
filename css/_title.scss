@@ -1,0 +1,40 @@
+.title {
+    h2 {
+        color: white;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin: 42px 0 0 77px;
+        font-weight: 700;
+    }
+
+    hr {
+        margin-left: 75px;
+        margin-top: 10px;
+        width: 350px;
+    }
+
+    &_indented{
+        h2{
+            margin-top: 80px;
+        }
+    }
+
+    &_colored{
+        h2{
+            color: rgb(100, 94, 94);
+        }
+    }
+    &_width{
+        h2,hr{
+            margin-left: 55px;
+        }
+        h2{
+            margin-top: 75px;
+            letter-spacing: 5px;
+        }
+        hr{
+            width: 80%;
+        }
+    }
+}

@@ -1,7 +1,18 @@
+@import "font";
+@import "title";
+@import "left-content";
+@import "right-content";
+@import "programs";
+@import "clips";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto';
 }
 
 body{
@@ -14,33 +25,18 @@ body{
 }
 
 .resume{
-    background: url("../images/pensil.png"),
-                url("../images/zazhim.png"), 
-                url("../images/zazhim.png"), 
-                url("../images/zazhim.png"), 
-                url("../images/pngwing.com.png"); 
-    background-repeat: no-repeat,
-                       no-repeat,
-                       no-repeat,
-                       no-repeat,
-                       no-repeat;
-    background-position: -55px 360px, 
-                         145px 150px,
-                         1620px 150px,
-                         1620px 400px,
-                         -20px 880px;
-    background-size: 510px,
-                     200px,
-                     200px,
-                     200px,
-                     400px;
+    position: relative;
+    background: url("../images/pensil.png");
+    background-repeat: no-repeat;
+    background-position: 65px 280px; 
+    background-size: 510px;
     padding-top: 102px;
     padding-bottom: 102px;
     &__content{
-        height: 1300px;
-        // background: linear-gradient(135deg, rgb(39, 45, 44), rgb(105, 105, 105));
-        background: url("../images/bg.jpg") no-repeat center;
-        background-size: 1160px;
+        position: relative;
+        display: flex;
+        background: linear-gradient(135deg, rgb(39, 45, 44), rgb(105, 105, 105));
         box-shadow: 0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 }
+

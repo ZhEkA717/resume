@@ -1,0 +1,123 @@
+.left-content {
+    width: 730px;
+
+    &__img {
+        width: 430px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        margin-left: 135px;
+        margin-top: 30px;
+        color: white;
+        max-width: 290px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 125%;
+    }
+
+    .contacts {
+        margin-top: 40px;
+        margin-left: 80px;
+
+        &__item {
+            display: flex;
+            align-items: flex-end;
+
+            &__icon {
+                width: 32px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__info {
+                color: white;
+                margin-left: 20px;
+                font-weight: 400px;
+                font-size: 20px;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: lightgrey;
+                    a {
+                        color: lightgrey;
+                        text-decoration: none;
+
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            width: 300px;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .skills {
+        max-width: 345px;
+        margin-top: 30px;
+        margin-left: 80px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            span {
+                color: white;
+                font-weight: 400px;
+                font-size: 20px;
+            }
+
+            .progress-bar {
+
+                width: 200px;
+                height: 18px;
+                border: 1px solid rgb(245, 241, 241);
+                background: linear-gradient(150deg, rgb(39, 45, 44), rgb(105, 105, 105));
+            }
+
+            .progress-line {
+                background: rgb(245, 241, 241);
+                height: 100%;
+
+                &_figma {
+                    width: 55%;
+                }
+
+                &_html {
+                    width: 83%;
+                }
+
+                &_css {
+                    width: 87%;
+                }
+
+                &_js {
+                    width: 75%;
+                }
+
+                &_git {
+                    width: 70%;
+                }
+                &_sql {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+}
