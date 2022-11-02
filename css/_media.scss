@@ -1,0 +1,140 @@
+@media (max-width: 990px){
+    .resume__content{
+        flex-direction: column;
+    }
+    .programs,.clips{
+        display: none;
+    }
+
+    .title_media {
+        h2 {
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            width: 130px;
+            margin: 42px auto;
+            font-weight: 700;
+        }
+    
+        hr {
+            margin: 0px auto;
+            width: 80%;
+        }    
+    }    
+
+    .left-content {
+        width: 100%;
+    
+        &__img {
+            width: 70%;
+            margin: auto;
+        }
+    
+        p {
+            margin: 30px auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 500px;
+        }
+    
+        .contacts {
+            margin: 40px auto;
+            max-width: 500px;
+            padding-left: 20px;
+            padding-right: 20px;
+    
+            hr {
+                max-width: 80%;
+            }
+        }
+    
+        .skills {
+            max-width: 500px;
+            margin: 30px auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .right-content{
+        h1{
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width:440px){
+    .right-content{
+        h1{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 20px;
+        }
+
+        
+    }
+    .right-content{
+        background: rgb(245, 241, 241) url("../images/back.jpg");
+        background-repeat:no-repeat;
+        background-position: left top;
+        background-size: 60px;
+        width: 100%;
+        
+        h1{
+            font-size: 28px;
+            margin-left: 80px;
+        }
+    
+        h3{
+            margin-left: 80px;
+            font-size: 20px;
+        }
+
+        .title_width{
+            h2,hr{
+                margin-left: 35px;
+            }
+            h2{
+                margin-top: 145px;
+            }
+          
+        }
+    
+        .education{
+            width: 72%;
+            margin-left: 95px;
+        }
+        
+        .works{
+            width: 72%;
+            margin-top: 25px;
+            margin-left: 123px;
+            &__item{
+                margin-bottom: 20px;
+                list-style-type: none;
+                position: relative;
+                &::before{
+                    content:"";
+                    position: absolute;
+                    left: -60px;
+                    top: 6px;
+                    width: 11px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background:rgb(100, 94, 94);
+                }
+    
+                a{
+                    text-decoration: none;
+                    color:rgb(100, 94, 94);
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}   
