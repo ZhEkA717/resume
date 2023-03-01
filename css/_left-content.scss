@@ -95,7 +95,7 @@
                 height: 100%;
 
                 &_figma {
-                    width: 55%;
+                    width: 40%;
                 }
 
                 &_html {
@@ -108,6 +108,18 @@
 
                 &_js {
                     width: 75%;
+                }
+
+                &_ts {
+                    width: 50%;
+                }
+
+                &_react {
+                    width: 30%;
+                }
+
+                &_angular {
+                    width: 30%;
                 }
 
                 &_git {
