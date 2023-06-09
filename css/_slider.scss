@@ -23,8 +23,12 @@
         display: flex;
     }
 
-    .container {
-        width: 90%;
+    .wrapper {
+        width: 50%;
+
+        @media (max-width: 1000px) {
+            width: 90%;
+        }
         
         .slider {
             width: 100%;
@@ -36,14 +40,24 @@
             }
         }
 
+        .slick-slide {
+            height: fit-content;
+        }
+
         .slick-arrow {
             height: 100%;
         }
 
-        .slick-dots li button:before {
-            color: grey;
-            font-size: 22px;
-            opacity: 1;
+        .slick-dots { 
+            
+            li {
+                margin: -15px 5px;
+                button:before {
+                    color: grey;
+                    font-size: 22px;
+                    opacity: 1;
+                }
+            }
         }
 
         .slick-dots li.slick-active button:before {
