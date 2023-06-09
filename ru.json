@@ -5,7 +5,7 @@
     "firstname":"Евгений Грушевский",
     "speciality":"веб разработчик",
     "education":"образование",
-    "works": "мои работы",
+    "works": "опыт",
     "educationItems" : [
         {
             "educationName": "Белорусский государственный университет информатики и радиоэлектроники",
@@ -26,6 +26,11 @@
             "educationName": "ROLLING SCOPE SCHOOL",
             "educationYears": "Сен 2022 - Мар 2023",
             "educationDescr": "RS School. Курс JS/Frontend - разработка. Этап#1. Git, GitHub, Адаптивный дизайн, Core JS, Алгоритмические задачи, DOM, DOM события, Browser API, основы NodeJS, WebPack. Работа c TypeScript, разработка компонентов пользовательского интерфейса, презентации на английском языке, проекты в команде." 
+        },
+        {
+            "educationName": "ROLLING SCOPE SCHOOL",
+            "educationYears": "Мар 2023 - ИЮН 2023",
+            "educationDescr": "RS School. Курс Angular - 2023 Q1. Этап#3. Компоненты, Дириктивы & Пайпы, Модули & Сервисы. Маршруты, Формы, RxJS & Наблюдаемые, NgRX." 
         }
     ]
 }
