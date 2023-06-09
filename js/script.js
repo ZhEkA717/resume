@@ -101,7 +101,7 @@ function toTranslate(event) {
 }
 
 function getTranslateData(lang) {
-    getResource(`../${lang}.json`)
+    getResource(`https://zheka717.github.io/resume/${lang}.json`)
     .then(data => {
         let {
             profile,
