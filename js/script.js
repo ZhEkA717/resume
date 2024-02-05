@@ -1,3 +1,24 @@
+$(document).ready(function(){
+    initSlier();
+  });
+
+const initSlier = () => {
+    $('.slider').slick({
+        dots: true,
+        focusOnSelect: false,
+        focusOnChange: false,
+        responsive: [
+            {
+              breakpoint: 550,
+              settings: {
+                arrows: false,
+              }
+            },
+          ]
+      });
+}
+
+
 const getResource = async (url) => {
     const res = await fetch(url);
 
@@ -56,12 +77,17 @@ const language = document.querySelector(".language");
 
 
 language.addEventListener("click", (e) => {
+    toTranslate(e);
+});
+
+function toTranslate(event) {
     const ru = language.querySelector(".ru"),
         eng = language.querySelector(".eng");
 
-    if (e.target.classList.contains("ru") || e.target.classList.contains("eng")) {
+    if (event.target.classList.contains("ru") ||
+        event.target.classList.contains("eng")) {
 
-        if (e.target == ru) {
+        if (event.target == ru) {
             eng.classList.remove("active")
             ru.classList.add("active")
         } else {
@@ -69,21 +95,54 @@ language.addEventListener("click", (e) => {
             eng.classList.add("active");
         }
 
-        const lng = e.target.classList.contains("ru") ? "ru" : "eng";
-        getResource(`https://zheka717.github.io/resume/${lng}.json`)
-            .then(data => {
-                let {
-                    profile,
-                    profileDescr,
-                    skills,
-                    firstname,
-                    speciality,
-                    education,
-                    works,
-                    educationItems
-                } = data;
-
-                new ChoiceLanguage(profile, profileDescr, skills, firstname, speciality, education, works, educationItems).translate();
-            });
+        const lng = event.target.classList.contains("ru") ? "ru" : "eng";
+        getTranslateData(lng);
     }
+}
+
+function getTranslateData(lang) {
+    getResource(`https://zheka717.github.io/resume/${lang}.json`)
+    .then(data => {
+        let {
+            profile,
+            profileDescr,
+            skills,
+            firstname,
+            speciality,
+            education,
+            works,
+            educationItems
+        } = data;
+
+        new ChoiceLanguage(profile, profileDescr, skills, firstname, speciality, education, works, educationItems).translate();
+    });
+}
+
+const sliderModal = document.querySelector('.slider-modal');
+
+const educations = document.querySelectorAll('.education__name');
+
+educations.forEach((item, i) => {
+    item.addEventListener('click', () => {
+       if (i !== 0) openModal(i);
+    });
 });
+
+sliderModal.addEventListener('click', (e) => {
+    closeModal(e);
+});
+
+const openModal = (i) => {
+    sliderModal.classList.add('active');
+    $('.slider').slick('slickGoTo', i - 1, true);
+    document.body.style.overflow = 'hidden';
+}
+
+const closeModal = (e) => {
+    e.target.classList.remove('active');
+    if (e.target === sliderModal) 
+    document.body.style.overflow = '';
+}
+
+
+

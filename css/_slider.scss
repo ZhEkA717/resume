@@ -1,0 +1,69 @@
+.hidden {
+    position: absolute;
+    top: -999px;
+
+    img {
+        width: 10px;
+    }
+}
+
+.slider-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    .wrapper {
+        width: 50%;
+
+        @media (max-width: 1000px) {
+            width: 90%;
+        }
+        
+        .slider {
+            width: 100%;
+            margin-bottom: 100px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .slick-slide {
+            height: fit-content;
+        }
+
+        .slick-arrow {
+            height: 100%;
+        }
+
+        .slick-dots { 
+            
+            li {
+                margin: -15px 5px;
+                button:before {
+                    color: grey;
+                    font-size: 22px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #fff;
+        }
+
+    }
+}
+

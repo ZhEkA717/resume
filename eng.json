@@ -5,12 +5,12 @@
     "firstname":"Evgeniy Grushevskiy",
     "speciality":"web developer",
     "education":"education",
-    "works": "my works during educaton",
+    "works": "Experience",
     "educationItems" : [
         {
             "educationName": "BELARUSIAN STATE UNIVERSITY OF INFORMATICS AND RADIOELECTRONICS",
             "educationYears": "SEP 2017 - JUN 2021",
-            "educationDescr": "Speciality: Information Technology and Management in technical systems. Qualification: Information technology engineer. Visual C++, SQL, Access, Oracle, AutoCad, Autodesk Inventor, Internet-technology." 
+            "educationDescr": "Speciality: Information Technology and Management in technical systems. Qualification: Information technology engineer." 
         },
         {
             "educationName": "IT-ACADEMY. EDUCATION CENTER FOR PROGRAMMING AND HIGH TECK",
@@ -26,6 +26,11 @@
             "educationName": "ROLLING SCOPE SCHOOL",
             "educationYears": "SEP 2022 - MAR 2023",
             "educationDescr": "RS School. Curse JS/Frontend - development. Stage#1, Stage#2. Git, GitHub, Adaptive layout, Core JS, Algorithmic tasks, DOM, DOM Events, Browser API, basic NodeJS, WebPack. Working with TypeScript, developing UI components, technical interviews, presentations in English, team projects." 
+        },
+        {
+            "educationName": "ROLLING SCOPE SCHOOL",
+            "educationYears": "Mar 2023 - Jun 2023",
+            "educationDescr": "RS School. Curse Angular - 2023 Q1. Stage#3. Components, Directives & Pipes, Modules & Services. Routing, Forms, RxJS & Observables, NgRX" 
         }
     ]
 }

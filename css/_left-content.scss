@@ -41,6 +41,11 @@
                 img {
                     width: 100%;
                 }
+
+                h3 {
+                    font-size: 24px;
+                    color: #fff;
+                }
             }
 
             &__info {
@@ -107,26 +112,26 @@
                 }
 
                 &_js {
-                    width: 75%;
+                    width: 85%;
                 }
 
                 &_ts {
-                    width: 50%;
+                    width: 55%;
                 }
 
                 &_react {
-                    width: 30%;
+                    width: 45%;
                 }
 
                 &_angular {
-                    width: 30%;
+                    width: 75%;
                 }
 
                 &_git {
-                    width: 70%;
+                    width: 80%;
                 }
                 &_sql {
-                    width: 65%;
+                    width: 45%;
                 }
             }
         }
